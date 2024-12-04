@@ -1,4 +1,4 @@
-module gitloader
+module github.com/domano/gitloader
 
 go 1.23.3
 

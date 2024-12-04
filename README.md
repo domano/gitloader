@@ -9,12 +9,13 @@ Downloads GitHub repository contents into a single text file, skipping build art
 - Preserves file paths in the output
 - Uses go-git for authentication and private repos
 
-## Installation
+## Installation and Usage
 
 ### Option 1: Direct Install
 
 ```bash
 go install github.com/domano/gitloader@latest
+gitloader github.com/domano/gitloader # Will check out this repo into one file
 ```
 
 ### Option 2: From Source
@@ -25,13 +26,16 @@ cd reponame
 go mod init github-content
 go get github.com/go-git/go-git/v5
 go install
+gitloader github.com/domano/gitloader # Will check out this repo into one file
 ```
 
-## Usage
+or just run
 
 ```bash
 go run main.go https://github.com/user/repo
 ```
+after checkout
+
 
 Output will be saved as `user-repo.txt` in the current directory.
 

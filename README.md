@@ -11,9 +11,20 @@ Downloads GitHub repository contents into a single text file, skipping build art
 
 ## Installation
 
+### Option 1: Direct Install
+
 ```bash
+go install github.com/yourusername/reponame@latest
+```
+
+### Option 2: From Source
+
+```bash
+git clone https://github.com/yourusername/reponame
+cd reponame
 go mod init github-content
 go get github.com/go-git/go-git/v5
+go install
 ```
 
 ## Usage
